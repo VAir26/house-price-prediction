@@ -1,10 +1,10 @@
 # House Price Prediction
 
-This is a simple machine learning project to predict house prices based on various features using the Boston Housing dataset. The model used in this project is a linear regression model.
+This is a simple machine learning project to predict house prices based on various features using the california Housing dataset. The model used in this project is a linear regression model. california dataset we are directly importing from sklearn dataset.
 
 ## Dataset
 
-The dataset used is the **Boston Housing dataset**, which is a popular dataset used for regression problems. It contains information on various features like:
+The dataset used is the **California Housing dataset**, which is a popular dataset used for regression problems. It contains information on various features like:
 - CRIM: Crime rate
 - ZN: Proportion of residential land zoned for large lots
 - INDUS: Proportion of non-retail business acres per town
