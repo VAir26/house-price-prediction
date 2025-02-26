@@ -1,23 +1,22 @@
 # Import necessary libraries
 import numpy as np
 import pandas as pd
-from sklearn.datasets import load_boston
+from sklearn.datasets import fetch_california_housing
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load the Boston housing dataset
-boston = load_boston()
+california_housing = fetch_california_housing()
 
-# Create a DataFrame with the dataset
-df = pd.DataFrame(boston.data, columns=boston.feature_names)
+# Create a DataFrame from the dataset
+df = pd.DataFrame(california_housing.data, columns=california_housing.feature_names)
 
-# Add the target (house prices) as the last column
-df['Price'] = boston.target
+# Add the target (house prices) as a new column
+df['Price'] = california_housing.target
 
-# Display the first few rows of the dataset
+# Display the first few rows
 print(df.head())
 
 # Visualize the distribution of house prices
